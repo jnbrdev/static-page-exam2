@@ -1,0 +1,204 @@
+body {
+    font-family: 'Archivo', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: transparent;
+    width: 100%;
+}
+
+.navbar a {
+    color: #fff !important;
+}
+
+.navbar a:hover {
+    color: #ffd700 !important;
+}
+
+#featured .card {
+    width: 100%; /* Ensure card takes full available width */
+    max-width: 300px; /* Maximum width to avoid stretching */
+    margin: 0 auto; /* Center the card horizontally */
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-img-top {
+    border-radius: 15px 15px 0 0;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #343a40;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.card-glass {
+    background: rgba(255, 255, 255, 0.1); /* Transparent background for glass effect */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border to enhance the glass effect */
+    border-radius: 10px; /* Rounded corners */
+    transition: all 0.3s ease;
+}
+
+.card-glass:hover {
+    background: rgba(255, 255, 255, 0.2); /* Darker background on hover */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Highlight border on hover */
+}
+
+.card-body {
+    color: #fff; /* Text color for contrast */
+}
+
+.btn-view-course {
+    background-color: transparent; /* Transparent background */
+    color: #343a40; /* Dark text color */
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+.hero {
+    height: 80vh;
+    background: url('https://images.pexels.com/photos/2982449/pexels-photo-2982449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center;
+    background-size: cover;
+    
+}
+
+#hero .row {
+    height: 100%;
+}
+#hero .navbar {
+    width: 100%; /* Ensure navbar is full width */
+    position: absolute; /* Ensure it stays within the hero section */
+    left: 0; /* Align to the left */
+    top: 0; /* Align to the top */
+}
+#hero .col-lg-12 {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    text-align: center;
+}
+
+#hero .col-lg-8 h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#hero .col-lg-8 p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+#hero .col-lg-8 button {
+    font-size: 1.1rem;
+    padding: 0.5rem 1.5rem;
+}
+
+
+
+.btn-primary, .btn-secondary, .btn-info {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+#home, #categories-section, #about {
+    padding: 1rem 0;
+}
+
+#home h2, #categories h2, #mission h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+#resources .bg-resources {
+    position: relative;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/13/USA-Harvard_University_Yard.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Adjust as needed */
+    color: white; /* Ensure the text is white */
+}
+
+/* Add a black shade overlay */
+#resources .bg-resources::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black color with 50% opacity */
+    z-index: 0; /* Ensure the overlay is behind the text */
+}
+
+/* Ensure text stays on top of the overlay */
+#resources .bg-resources h5,
+#resources .bg-resources p,
+#resources .bg-resources a {
+    position: relative;
+    z-index: 1; /* Make sure text is above the overlay */
+}
+
+
+
+/* Set fixed size for category cards */
+.fixed-size {
+    height: 350px; /* Adjust the height as needed */
+    width: 100%; /* You can also specify a fixed width */
+    margin-bottom: 2;
+}
+
+.fixed-size .card-img-top {
+    height: 200px; /* Adjust the height of the image */
+    object-fit: cover;
+}
+
